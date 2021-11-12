@@ -135,7 +135,7 @@ q {
 }
 
 q::after {
-	content: "»";
+	content: "».";
 }
 
 .art {
