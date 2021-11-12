@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
+
+body {
+	line-height: 1.2em;
+	font-family: "Lato", sans-serif;
+	font-size: 14px; /*
+	font-family: "IBM Plex Serif", serif;
+	font-size: 15px;
+	line-height: 1.3em;*/
+}
+
+article {
+	break-before: right; /* page/left/right */
+	counter-reset: page 1;
+	counter-reset: headingOne 0;
+}
+
+header h1 {
+	text-align: center;
+	string-set: chapterTitle content(text);
+}
+
+section h1::before {
+	content: counter(headingOne) ". ";
+}
+
+section h1 {
+	font-size: 1.3em;
+	margin-top: 3em;
+	margin-bottom: 1em;
+	counter-increment: headingOne 1;
+	counter-reset: headingTwo 0;
+}
+
+section h2::before {
+	content: counter(headingOne) "." counter(headingTwo) ". ";
+}
+
+section h2 {
+	margin-top: 2.5em;
+	margin-bottom: 1em;
+	font-size: 1.15em;
+	font-weight: normal;
+	text-transform: uppercase;
+	counter-increment: headingTwo 1;
+	counter-reset: headingThree 0;
+}
+
+/*section h3::before {
+	color: initial;
+	content: counter(headingOne) "." counter(headingTwo) "." counter(headingThree)
+		". ";
+}
+
+section h3 {
+	margin-top: 1.6em;
+	font-size: 1em;
+	counter-increment: headingThree 1;
+	counter-reset: headingFour 0;
+}
+
+section h4::before {
+	content: counter(headingOne) "." counter(headingTwo) "." counter(headingThree)
+		"." counter(headingFour) ". ";
+}
+
+section h4 {
+	font-weight: normal;
+	font-style: italic;
+	margin-bottom: 6px;
+	counter-increment: headingFour 1;
+}*/
+
+section h3 {
+	font-size: 0.95em !important;
+	text-transform: uppercase;
+	/*	text-decoration: underline;
+	text-underline-position: under;
+	font-style: italic;*/
+	font-weight: 900;
+	margin-top: 2em;
+	margin-bottom: 1em;
+	/*color: #d43200;*/
+	/*color: #003c91;*/
+}
+
+section h4 {
+	margin-top: 2em;
+	margin-bottom: 0;
+	font-style: italic;
+	font-size: 1.05em;
+}
+
+section p {
+	/*text-indent: 0.25in;*/
+	margin: 10px 0 14px 0;
+}
+
+ul {
+	padding-left: 25px;
+}
+
+ul li {
+	list-style-type: square;
+}
+
+li {
+	margin-bottom: 0.5em;
+}
+
+dt {
+	margin-top: 6px;
+	margin-bottom: 2px;
+}
+
+p,
+li {
+	text-align: justify;
+	hyphens: auto;
+}
+
+strong,
+dt,
+h3,
+header p {
+	font-weight: 700;
+}
+
+q::before {
+	content: "«";
+}
+
+q {
+	font-style: italic;
+}
+
+q::after {
+	content: "»";
+}
+
+.art {
+	color: #228b22;
+	white-space: nowrap;
+	box-shadow: inset 0 0 0 1000px #f7fff7;
+	border-radius: 5px;
+	/*box-shadow: inset 0 0 0 1000px #f1fff1, 5px 0 0 0 #f1fff1, -5px 0 0 0 #f1fff1;
+	border-radius: 1em;
+	overflow: hidden;*/
+}
+
+.list,
+.head,
+.heading {
+	color: #008080;
+}
+
+.def,
+.ele,
+.element {
+	color: #d43200;
+	font-style: italic;
+}
+
+.info,
+.keyword {
+	color: #113b75;
+}
+
+.sub {
+	font-size: 0.95em;
+	color: #333;
+}
+
+@page {
+	size: A4;
+
+	@bottom-center {
+		content: string(chapterTitle) " – " counter(page);
+	}
+}
