@@ -139,7 +139,8 @@ q::after {
 }
 
 .art {
-	color: #228b22;
+	/*color: #228b22;*/
+	color: #00A36C;
 	white-space: nowrap;
 	box-shadow: inset 0 0 0 1000px #f7fff7;
 	border-radius: 5px;
@@ -157,13 +158,13 @@ q::after {
 .def,
 .ele,
 .element {
-	color: #d43200;
+	color: #d43200; /*#800020*/
 	font-style: italic;
 }
 
 .info,
 .keyword {
-	color: #113b75;
+	color: /*#113b75*/ #0F52BA;
 }
 
 .sub {
