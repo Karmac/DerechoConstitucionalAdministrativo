@@ -164,7 +164,7 @@ q::after {
 
 .info,
 .keyword {
-	color: /*#113b75*/ #0F52BA;
+	color: #113b75 /*#0F52BA*/;
 }
 
 .sub {
