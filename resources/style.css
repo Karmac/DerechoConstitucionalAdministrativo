@@ -104,6 +104,10 @@ ul li {
 	list-style-type: square;
 }
 
+ul.none li {
+	list-style: none;
+}
+
 li {
 	margin-bottom: 0.5em;
 }
@@ -130,7 +134,8 @@ q::before {
 	content: "«";
 }
 
-q {
+q,
+blockquote {
 	font-style: italic;
 }
 
@@ -140,7 +145,7 @@ q::after {
 
 .art {
 	/*color: #228b22;*/
-	color: #00A36C;
+	color: #00a36c;
 	white-space: nowrap;
 	box-shadow: inset 0 0 0 1000px #f7fff7;
 	border-radius: 5px;
