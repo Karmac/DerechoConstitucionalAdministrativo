@@ -96,6 +96,14 @@ section p {
 	margin: 10px 0 14px 0;
 }
 
+blockquote {
+	margin-right: 0;
+}
+
+blockquote p {
+	margin: 8px 0 11px 0;
+}
+
 ul {
 	padding-left: 25px;
 }
