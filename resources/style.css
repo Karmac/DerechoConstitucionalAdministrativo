@@ -71,25 +71,31 @@ section h4 {
 
 section p {
 	/*text-indent: 0.25in;*/
-	margin: 10px 0 14px 0;
+	margin: 15px 0 0 0;
 }
 
 blockquote {
-	margin-top: 0;
-	margin-bottom: 0;
 	margin-right: 0;
 }
 
-blockquote p {
-	margin: 2px 0 4px 0;
+blockquote.collapse {
+	margin-top: 4px;
 }
 
+blockquote p,
 blockquote ul {
-	margin: 8px 0;
+	margin: 8px 0 0 0;
 }
 
-ul {
+section ul {
+	margin-top: 12px;
+	margin-bottom: 3px;
 	padding-left: 25px;
+}
+
+section ul ul {
+	margin-top: 8px;
+	margin-bottom: 8px;
 }
 
 ul li {
@@ -101,12 +107,7 @@ ul.none li {
 }
 
 li {
-	margin-bottom: 0.5em;
-}
-
-dt {
-	margin-top: 6px;
-	margin-bottom: 2px;
+	margin-top: 0.3em;
 }
 
 p,
@@ -142,6 +143,7 @@ q::after {
 	white-space: nowrap;
 	box-shadow: inset 0 0 0 1000px #f7fff7;
 	border-radius: 5px;
+	text-transform: none !important;
 	/*box-shadow: inset 0 0 0 1000px #f1fff1, 5px 0 0 0 #f1fff1, -5px 0 0 0 #f1fff1;
 	border-radius: 1em;
 	overflow: hidden;*/
