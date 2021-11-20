@@ -1,5 +1,7 @@
+/* FONTS */
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
 
+/* GENERAL */
 body {
 	line-height: 1.2em;
 	font-family: "Lato", sans-serif;
@@ -15,10 +17,14 @@ article {
 	counter-reset: headingOne 0;
 }
 
+/* TÍTULOS DE TEMAS */
+
 header h1 {
 	text-align: center;
 	string-set: chapterTitle content(text);
 }
+
+/* ENCABEZADOS */
 
 section h1::before {
 	content: counter(headingOne) ". ";
@@ -46,42 +52,12 @@ section h2 {
 	counter-reset: headingThree 0;
 }
 
-/*section h3::before {
-	color: initial;
-	content: counter(headingOne) "." counter(headingTwo) "." counter(headingThree)
-		". ";
-}
-
-section h3 {
-	margin-top: 1.6em;
-	font-size: 1em;
-	counter-increment: headingThree 1;
-	counter-reset: headingFour 0;
-}
-
-section h4::before {
-	content: counter(headingOne) "." counter(headingTwo) "." counter(headingThree)
-		"." counter(headingFour) ". ";
-}
-
-section h4 {
-	font-weight: normal;
-	font-style: italic;
-	margin-bottom: 6px;
-	counter-increment: headingFour 1;
-}*/
-
 section h3 {
 	font-size: 0.95em !important;
 	text-transform: uppercase;
-	/*	text-decoration: underline;
-	text-underline-position: under;
-	font-style: italic;*/
 	font-weight: 900;
 	margin-top: 2.5em;
 	margin-bottom: 1em;
-	/*color: #d43200;*/
-	/*color: #003c91;*/
 }
 
 section h4 {
@@ -90,6 +66,8 @@ section h4 {
 	font-style: italic;
 	font-size: 1.05em;
 }
+
+/* ELEMENTOS DE PÁRRAFO */
 
 section p {
 	/*text-indent: 0.25in;*/
