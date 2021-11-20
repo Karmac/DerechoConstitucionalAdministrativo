@@ -97,11 +97,17 @@ section p {
 }
 
 blockquote {
+	margin-top: 0;
+	margin-bottom: 0;
 	margin-right: 0;
 }
 
 blockquote p {
 	margin: 2px 0 4px 0;
+}
+
+blockquote ul {
+	margin: 6px 0;
 }
 
 ul {
