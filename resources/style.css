@@ -32,7 +32,7 @@ section h1::before {
 
 section h1 {
 	font-size: 1.3em;
-	margin-top: 3em;
+	margin-top: 3.5em;
 	margin-bottom: 1em;
 	counter-increment: headingOne 1;
 	counter-reset: headingTwo 0;
@@ -43,7 +43,7 @@ section h2::before {
 }
 
 section h2 {
-	margin-top: 2.5em;
+	margin-top: 3em;
 	margin-bottom: 1em;
 	font-size: 1.15em;
 	font-weight: normal;
@@ -71,7 +71,7 @@ section h4 {
 
 section p {
 	/*text-indent: 0.25in;*/
-	margin: 1em 0 0 0;
+	margin: 0.8em 0 0 0;
 }
 
 blockquote {
@@ -82,15 +82,23 @@ blockquote.collapse {
 	margin-top: 4px;
 }
 
+blockquote.paragraph {
+	margin-left: 0;
+}
+
 blockquote p,
 blockquote ul {
-	margin: 8px 0 0 0;
+	margin: 0.4em 0 0 0 !important;
+}
+
+blockquote em {
+	font-style: normal;
 }
 
 section ul {
-	margin-top: 12px;
-	margin-bottom: 3px;
-	padding-left: 25px;
+	margin-top: 0.8em;
+	margin-bottom: 0.1em;
+	padding-left: 2em;
 }
 
 section ul ul {
@@ -107,7 +115,7 @@ ul.none li {
 }
 
 li {
-	margin-top: 0.3em;
+	margin-top: 0.2em;
 }
 
 p,
@@ -168,7 +176,7 @@ q::after {
 }
 
 .sub {
-	font-size: 0.95em;
+	font-size: 0.9em;
 	color: #333;
 }
 
