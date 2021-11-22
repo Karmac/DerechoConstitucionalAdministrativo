@@ -67,6 +67,14 @@ section h4 {
 	font-size: 1.05em;
 }
 
+/* FIX ENCABEZADOS QUE COMIENZAN LA PÁGINA */
+.pagedjs_page section:first-child > h1,
+.pagedjs_page section:first-child > h2,
+.pagedjs_page section:first-child > h3,
+.pagedjs_page section:first-child > h4 {
+	margin-top: 0;
+}
+
 /* ELEMENTOS DE PÁRRAFO */
 
 section p {
