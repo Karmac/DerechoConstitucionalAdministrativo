@@ -188,6 +188,10 @@ q::after {
 	color: #333;
 }
 
+.hide {
+	display: none;
+}
+
 @page {
 	size: A4;
 
