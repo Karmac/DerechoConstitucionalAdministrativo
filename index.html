@@ -9,7 +9,13 @@
 		<li><a href="Tema 14.html">Tema 14</a></li>
 		<li><a href="Tema 15.html">Tema 15</a></li>
 		<li><a href="Tema 16.html">Tema 16</a></li>
+		<li><a href="Tema 17.html">Tema 17</a></li>
 	</ul>
+
+	<form onsubmit="location.href='/Tema ' + document.getElementById('numeroTema').value + '.html'; return false;" style="margin-top: 6em;">
+		<input type="text" id="numeroTema" />
+		<input type="submit">
+	</form>
 </body>
 </html>
 
