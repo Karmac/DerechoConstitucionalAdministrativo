@@ -166,6 +166,10 @@ q::after {
 	color: #953553;
 }
 
+.to-do {
+	color: #e30b5c;
+}
+
 .list,
 .head,
 .heading {
