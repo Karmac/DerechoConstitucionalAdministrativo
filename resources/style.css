@@ -153,8 +153,7 @@ q::after {
 	content: "»";
 }
 
-.art,
-.ley {
+.art {
 	/*color: #228b22;*/
 	color: #00a36c;
 	white-space: nowrap;
@@ -164,6 +163,10 @@ q::after {
 	/*box-shadow: inset 0 0 0 1000px #f1fff1, 5px 0 0 0 #f1fff1, -5px 0 0 0 #f1fff1;
 	border-radius: 1em;
 	overflow: hidden;*/
+}
+
+.ley {
+	color: #4fa300;
 }
 
 .list,
