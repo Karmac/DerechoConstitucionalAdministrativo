@@ -146,7 +146,7 @@ q::before {
 q,
 blockquote p,
 blockquote ul {
-	font-style: italic;
+	/*font-style: italic;*/
 }
 
 q::after {
