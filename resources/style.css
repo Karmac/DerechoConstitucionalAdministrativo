@@ -171,6 +171,11 @@ q::after {
 	font-weight: bold;
 }
 
+.tip {
+	color: #333;
+	font-weight: bold;
+}
+
 .list,
 .head,
 .heading {
