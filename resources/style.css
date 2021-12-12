@@ -84,9 +84,6 @@ section p {
 
 blockquote {
 	margin-right: 0;
-}
-
-blockquote.collapse {
 	margin-top: 4px;
 }
 
@@ -146,7 +143,7 @@ q::before {
 q,
 blockquote p,
 blockquote ul {
-	/*font-style: italic;*/
+	font-style: italic;
 }
 
 q::after {
