@@ -153,7 +153,8 @@ q::after {
 	content: "»";
 }
 
-.art {
+.art,
+.ley {
 	/*color: #228b22;*/
 	color: #00a36c;
 	white-space: nowrap;
