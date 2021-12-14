@@ -171,6 +171,11 @@ q::after {
 	font-weight: bold;
 }
 
+.element {
+	box-shadow: inset 0 0 0 1000px rgba(212, 50, 0, 0.2);
+	border-radius: 5px;
+}
+
 .highlight {
 	box-shadow: inset 0 0 0 1000px rgba(245, 200, 0, 0.2);
 	border-radius: 5px;
@@ -187,12 +192,12 @@ q::after {
 	color: #008080;
 }
 
-.def,
+/*.def,
 .ele,
 .element {
-	color: #d43200; /*#800020*/
+	color: #d43200; /*#800020
 	font-style: italic;
-}
+}*/
 
 .info,
 .keyword {
