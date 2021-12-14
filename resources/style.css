@@ -171,6 +171,11 @@ q::after {
 	font-weight: bold;
 }
 
+.highlight {
+	box-shadow: inset 0 0 0 1000px rgba(245, 200, 0, 0.1);
+	border-radius: 5px;
+}
+
 .tip {
 	color: #555;
 	font-weight: bold;
