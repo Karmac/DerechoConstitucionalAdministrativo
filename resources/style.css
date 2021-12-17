@@ -121,14 +121,6 @@ ul.none li {
 	list-style: none;
 }
 
-ol.letters {
-	list-style-type: lower-alpha;
-}
-
-ol.numbers {
-	list-style-type: decimal;
-}
-
 li {
 	margin-top: 0.25em;
 }
@@ -174,7 +166,7 @@ q::after {
 
 .ley {
 	color: #953553;
-	box-shadow: inset 0 0 0 1000px #fff2f6;
+	box-shadow: inset 0 0 0 1000px #fff5f8;
 	border-radius: 5px;
 }
 
