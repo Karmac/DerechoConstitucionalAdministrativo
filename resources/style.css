@@ -100,13 +100,15 @@ blockquote em {
 	font-style: normal;
 }
 
-section ul {
+section ul,
+section ol {
 	margin-top: 0.8em;
 	margin-bottom: 0.1em;
 	padding-left: 2em;
 }
 
-section ul ul {
+section ul ul,
+section ol ol {
 	margin-top: 8px;
 	margin-bottom: 8px;
 }
@@ -117,6 +119,10 @@ ul li {
 
 ul.none li {
 	list-style: none;
+}
+
+ol {
+	list-style-type: lower-alpha;
 }
 
 li {
