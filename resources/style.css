@@ -87,7 +87,8 @@ blockquote {
 	margin-top: 4px;
 }
 
-blockquote.paragraph {
+blockquote.paragraph,
+blockquote.par {
 	margin-left: 0;
 }
 
