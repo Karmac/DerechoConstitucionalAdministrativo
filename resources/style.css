@@ -154,7 +154,7 @@ ul.none li {
 
 ol.alpha,
 ol.decimal {
-	counter-reset: list;
+	counter-reset: list 1;
 }
 
 ol.alpha > li:not([style]),
