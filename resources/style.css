@@ -163,12 +163,12 @@ q::before {
 	content: "«";
 }
 
-/*q,
+q,
 blockquote p,
 blockquote ul,
 blockquote ol {
 	font-style: italic;
-}*/
+}
 
 q::after {
 	content: "»";
