@@ -157,14 +157,15 @@ ol.decimal {
 	counter-reset: list;
 }
 
-ol.alpha > li,
-ol.decimal > li {
+ol.alpha > li:not([style]),
+ol.decimal > li:not([style]) {
 	list-style: none;
 	counter-increment: list;
 }
 
-ol.alpha > li[value] {
-	counter-set: list attr(value);
+ol.alpha > li[style],
+ol.decimal > li[style] {
+	counter-reset: list var(--value);
 }
 
 ol.alpha > li::marker {
