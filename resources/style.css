@@ -165,7 +165,7 @@ ol.decimal > li:not([style]) {
 
 ol.alpha > li[style],
 ol.decimal > li[style] {
-	counter-reset: list var(--value);
+	counter-reset: list var(--list-value);
 }
 
 ol.alpha > li::marker {
