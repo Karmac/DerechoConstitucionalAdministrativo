@@ -163,8 +163,8 @@ ol.decimal > li {
 	counter-increment: list;
 }
 
-ol.alpha > li[value]::before {
-	counter-reset: list attr(value);
+ol.alpha > li[value] {
+	counter-set: list attr(value);
 }
 
 ol.alpha > li::marker {
