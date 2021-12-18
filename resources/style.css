@@ -125,6 +125,10 @@ blockquote em {
 	font-style: normal;
 }
 
+blockquote .cite {
+	text-align: right;
+}
+
 /* listas */
 
 section ul,
