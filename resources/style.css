@@ -123,6 +123,25 @@ ul.none li {
 	list-style: none;
 }
 
+ol.alpha,
+ol.decimal {
+	counter-reset: list;
+}
+
+ol.alpha > li,
+ol.decimal > li {
+	list-style: none;
+	counter-increment: list;
+}
+
+ol.alpha > li::marker {
+	content: counter(list, lower-alpha) ")\a0";
+}
+
+ol.alpha > li::marker {
+	content: counter(list) ".º\a0";
+}
+
 li {
 	margin-top: 0.25em;
 }
