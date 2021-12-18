@@ -159,7 +159,11 @@ ol.decimal > li {
 	counter-increment: list;
 }
 
-ol.alpha > li::marker {
+ol.alpha > li[value]::marker {
+	content: attr(value, lower-alpha) ")\a0";
+}
+
+ol.alpha > li:not([value])::marker {
 	content: counter(list, lower-alpha) ")\a0";
 }
 
