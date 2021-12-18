@@ -135,7 +135,7 @@ ol.decimal > li {
 }
 
 ol.alpha > li::marker {
-	content: counter(list, lower-alpha) ")\a0";
+	content: counter(list, lower-roman) ")\a0";
 }
 
 ol.alpha > li::marker {
